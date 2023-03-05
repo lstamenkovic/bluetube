@@ -1,0 +1,131 @@
+.main_container {
+  padding: 10px 0 0 0;
+}
+.nav_smallscreen {
+  display: block;
+}
+.nav_bigscreen {
+  display: none;
+}
+#search_menu {
+  display: none;
+}
+#nav_bigscreen_elements {
+  display: flex;
+}
+.search_btn.small {
+  display: flex;
+}
+.search_expanded.big {
+  display: none;
+}
+
+@media screen and (min-width: 545px) {
+  .nav_smallscreen {
+    display: none !important;
+  }
+  #main_part {
+    margin-top: 0px;
+  }
+  .nav_bigscreen {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 675px) {
+  .nav_bigscreen_flex_container.logo_flex_container {
+    flex: 72%;
+  }
+  .nav_bigscreen_flex_container.search_flex_container {
+    flex: 15%;
+  }
+  .nav_bigscreen_flex_container.signin_flex_container {
+    flex: 30%;
+  }
+}
+
+@media screen and (min-width: 546px) {
+  .main_container {
+    padding: 10px 10px 0 10px;
+  }
+  #main_part {
+    padding: 50px 10px 0 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .shorts {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+  .video_card {
+    .thumbnail {
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .search_btn.small {
+    display: none;
+  }
+  .search_expanded.big {
+    display: flex;
+  }
+
+  .shorts {
+    border-top: 5px solid #383838;
+  }
+  .shorts_title {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 794px) {
+  // .main_container { padding: 10px 0 0 50px;}
+  .main_container {
+    padding: 10px;
+  }
+  #main_part {
+    padding-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shorts {
+    grid-area: 2 / 1 / span 1 / span 3;
+  }
+}
+
+@media screen and (min-width: 886px) {
+  // .main_container { padding: 10px 50px 0 240px;}
+  #main_part {
+    padding-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .shorts {
+    grid-area: 2 / 1 / span 1 / span 4;
+  }
+}
+
+@media screen and (min-width: 1136px) {
+  // .main_container { padding: 10px 20px 0 240px;}
+  #main_part {
+    padding-top: 50px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .shorts {
+    grid-area: 2 / 1 / span 1 / span 5;
+  }
+}
+
+@media screen and (min-width: 1961px) {
+  #main_part {
+    padding-top: 50px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .shorts {
+    grid-area: 2 / 1 / span 1 / span 6;
+  }
+}
