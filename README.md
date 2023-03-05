@@ -11,4 +11,4 @@ Front-end clone of YouTube website
 <hr>
 
 ## Desktop version
-<img src="/screenshots/screenshot_desktop.png" height="500">
+<img src="/screenshots/screenshot_desktop.png" width="995">
